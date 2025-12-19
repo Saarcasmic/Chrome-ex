@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Jobfound Job Manager",
+  "version": "1.0",
+  "description": "Hide job posts you've already seen on Jobfound.org",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.jobfound.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.jobfound.org/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}
